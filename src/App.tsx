@@ -64,7 +64,6 @@ function App() {
       setOver(true);
     } else {
       setNumber(nextQuestion);
-      console.log(nextQuestion);
     }
   };
 

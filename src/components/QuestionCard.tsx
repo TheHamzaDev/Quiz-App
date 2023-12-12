@@ -33,8 +33,12 @@ export default function QuestionCard({
             answers.map((answer) => (
               <ButtonWrapper
                 key={answer}
-                correct={userAnswer?.correctAnswer === answer}
-                userClicked={userAnswer?.answer === answer}
+                //Had to assign to string rather than to boolean as for some reason it didn't work
+                correct={
+                  userAnswer?.correctAnswer === answer ? "true" : "false"
+                }
+                //Removed the camel casing as it also popped up errors
+                userclicked={userAnswer?.answer === answer ? "true" : "false"}
               >
                 <button
                   disabled={userAnswer ? true : false}

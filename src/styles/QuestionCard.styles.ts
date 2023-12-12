@@ -44,9 +44,9 @@ export const Wrapper = styled.div`
   }
 `;
 
-export type ButtonWrapperProps = {
-  correct: boolean;
-  userClicked: boolean;
+type ButtonWrapperProps = {
+  correct: string;
+  userclicked: string;
 };
 
 export const ButtonWrapper = styled.div<ButtonWrapperProps>`
@@ -59,9 +59,13 @@ export const ButtonWrapper = styled.div<ButtonWrapperProps>`
     margin: 10px 0;
     background-color: transparent;
     border: 2px solid
-      ${({ correct, userClicked }) =>
-        correct ? "#61FF48" : !correct && userClicked ? "#FF4141" : "#f0ebd8"};
+      ${({ correct , userclicked }) =>
+        correct === "true" ? "#61FF48" : correct === "false" && userclicked === "true" ? "#FF4141" : "#f0ebd8"};
     border-radius: 20px;
     color: #f0ebd8;
+  }
+
+  button span{
+    padding: 10px;
   }
 `;
