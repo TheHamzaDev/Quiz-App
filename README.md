@@ -9,4 +9,4 @@ The website is responsive and can be viewed on both desktop and mobile devices.
 Checkout the live demo and try it for yourself: [quizzatron-app.netlify.app/](https://quizzatron-app.netlify.app/)
 
 ## Screenshot
-
+<img width="1898" alt="Screenshot 2023-12-10 202509" src="https://github.com/TheHamzaDev/Quiz-App/assets/143728239/2b1fb510-e16e-469d-8261-fa1fe786ce17">
